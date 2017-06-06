@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itheima="http://schemas.android.com/apk/res-auto"
+    itheima:cardCornerRadius="10dp"
+    itheima:cardElevation="5dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:stateListAnimator="@anim/touch_raise"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <!--foreground : 前景-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:singleLine="true"
+            android:text="文件名称"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_size"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_name"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:text="文件大小"/>
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_name"
+            android:layout_toRightOf="@+id/tv_size"
+            android:text="视频长度"/>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
